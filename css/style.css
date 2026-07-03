@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/*====================================
+Variables
+=======================================*/
+
+:root {
+
+  /* Font family */
+  --primaryFontFamily: "Work Sans", sans-serif;
+
+  /*Theme Colors */
+  --primaryColor: #ff900e;
+  --secondaryColor: #fff4e7;
+
+  /*Text Colors */
+  --primaryTextColor: #000000;
+  --secondaryTextColor: #727272;
+
+  /*Shadow Colors */
+ --boxShadow: rgba(100, 100, 111, 0.2) 0px 4px 30px 0px;
+
+  /* Font Sizes */
+  --primaryFontSize: 1rem;
+  --secondaryFontSize: 1.25rem;
+  --subTitleFontSize: 2.813rem;
+  --titleFontSize: 4rem;
+
+}
+
+/*=======================================
+Reset CSS
+========================================== */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: var(--primaryFontFamily);
+  font-size: var(--primaryFontSize);
+  color: var(--secondaryTextColor);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  width: 100%;
+}
+
+
+/*==============================
+Common CSS
+=================================*/
+
+.container {
+  max-width: 75rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.pt-100 {
+  padding-top: 6.25rem;
+}
+
+.pb-100 {
+  padding-bottom: 6.25rem;
+}
+
+.pt-50 {
+  padding-top: 3.125rem;
+}
+
+.pb-50 {
+  padding-bottom: 3.125rem;
+}
+
