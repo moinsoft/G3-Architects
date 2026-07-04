@@ -42,6 +42,7 @@ Reset CSS
   padding: 0;
   box-sizing: border-box;
   outline: none;
+  vertical-align:bottom;
 }
 
 body {
@@ -61,6 +62,7 @@ a {
 
 img {
   width: 100%;
+  height: auto;
 }
 
 
@@ -90,3 +92,76 @@ Common CSS
   padding-bottom: 3.125rem;
 }
 
+
+.btn{
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primaryColor);
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+
+
+
+/*==============================
+Hero Section
+=================================*/
+
+.hero {
+  background-color: var(--secondaryColor);
+  padding-top: 2rem;
+}
+
+.navbar{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.navbar__logoLink {
+  font-size: var(--subTitleFontSize);
+  font-weight: 600;
+  color: var(--secondaryTextColor);
+}
+
+.navbar__logoLink img {
+  width: 3rem;
+}
+
+.navbar__menu {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar__link {
+  color: var(--secondaryTextColor);
+  font-weight: bold;
+  transition: all 0.3s linear;
+}
+
+.navbar__link:hover {
+  color: var(--primaryColor);
+}
+
+.hero__content {
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.hero__title{
+  font-size: var(--titleFontSize);
+  font-weight: 600;
+  color: var(--primaryTextColor);
+}
+
+.hero__description {
+  font-size: var(--primaryFontSize);
+  color: var(--secondaryTextColor);
+  margin-top: 2rem;
+}
+
+.hero__btn{
+  margin: 3rem 0;
+}
