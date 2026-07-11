@@ -4,8 +4,8 @@ A responsive architecture landing page built from a Figma design using HTML5 and
 
 ## 🔗 Links
 
-* **🌐 Live Demo:** [View Live Demo](https://moinsoft.github.io/G3-Architects/)
-* **📦 Repository:** [GitHub Repository](https://github.com/moinsoft/G3-Architects)
+**🌐 Live Demo:** [View Live Demo](https://moinsoft.github.io/G3-Architects/)
+**📦 Repository:** [GitHub Repository](https://github.com/moinsoft/G3-Architects)
 
 ## 📌 Project Overview
 
@@ -77,4 +77,5 @@ Navigate to the project folder and open `index.html` in your browser.
 
 **Mohammad Moin Uddin**
 
-* GitHub: [moinsoft](https://github.com/moinsoft)
+- GitHub: [moinsoft](https://github.com/moinsoft)
+- LinkedIn: [Mohammad Moin Uddin](https://www.linkedin.com/in/moinsoft/)
