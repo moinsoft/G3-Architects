@@ -9,30 +9,33 @@ Variables
 
 :root {
 
-  /* Font family */
-  --primaryFontFamily: "Work Sans", sans-serif;
+  --font-family-primary:"Work Sans",sans-serif;
 
-  /*Theme Colors */
-  --primaryColor: #ff900e;
-  --secondaryColor: #fff4e7;
+  --color-primary:#ff900e;
+  --color-secondary:#fff4e7;
+  --color-text-primary:#131313;
+  --color-text-secondary:#727272;
+  --color-white:#fff;
 
-  /*Text Colors */
-  --primaryTextColor: #000000;
-  --secondaryTextColor: #727272;
-
-  /*Shadow Colors */
  --boxShadow: rgba(100, 100, 111, 0.2) 0px 4px 30px 0px;
 
-  /* Font Sizes */
-  --primaryFontSize: 1rem;
-  --secondaryFontSize: 1.25rem;
-  --subTitleFontSize: 2.813rem;
-  --titleFontSize: 4rem;
+  --font-size-base:1rem;
+  --font-size-lg:1.25rem;
+  --font-size-xl:2.8125rem;
+  --font-size-2xl:4rem;
+
+  --font-weight-regular:400;
+  --font-weight-semibold:600;
+  --font-weight-bold:700;
+
+  --radius-md:.5rem;
+
+  --transition-fast:.3s ease;
 
 }
 
 /*=======================================
-Reset CSS
+Reset
 ========================================== */
 
 *,
@@ -41,14 +44,17 @@ Reset CSS
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: none;
-  vertical-align:bottom;
 }
 
-body {
-  font-family: var(--primaryFontFamily);
-  font-size: var(--primaryFontSize);
-  color: var(--secondaryTextColor);
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:var(--font-family-primary);
+  font-size:var(--font-size-base);
+  color:var(--color-text-secondary);
+  line-height:1.6;
 }
 
 ul {
@@ -57,23 +63,22 @@ ul {
 
 a {
   text-decoration: none;
-  display: inline-block;
+  color:inherit;
 }
 
 img {
-  width: 100%;
-  height: auto;
+  max-width:100%;
+  height:auto;
 }
 
 
 /*==============================
-Common CSS
+Utilities
 =================================*/
 
 .container {
-  max-width: 75rem;
-  width: 80%;
-  margin: 0 auto;
+  width:min(90%,75rem);
+  margin-inline:auto;
 }
 
 .pt-100 {
@@ -94,71 +99,92 @@ Common CSS
 
 
 .btn{
+  display:inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: var(--primaryColor);
-  color: #ffffff;
-  font-weight: bold;
-  border-radius: 0.5rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-weight: var(--font-weight-bold);
+  border-radius: var(--radius-md);
+  transition: var(--transition-fast);
 }
 
+.btn:hover,
+.btn:focus-visible{
+  background:#e67e00;
+}
+
+a:focus-visible{
+  outline:2px solid var(--color-primary);
+  outline-offset:3px;
+}
+
+
+
+/*========================
+Header Section
+==========================*/
+
+.header{
+  background:var(--color-secondary);
+  padding: 1.5rem 0;
+}
+
+.navbar{
+  display:grid;
+  grid-template-columns:1fr auto;
+  align-items: center;
+}
+
+.navbar__logo {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.navbar__logo-image{
+  width:3rem;
+}
+
+.navbar__logo-text{
+  font-size:var(--font-size-xl);
+  font-weight:var(--font-weight-semibold);
+  color:var(--color-text-primary);
+}
+
+.navbar__menu{
+  display:flex;
+  gap:2rem;
+}
+
+.navbar__link{
+  font-weight:var(--font-weight-bold);
+  transition:var(--transition-fast);
+}
+
+.navbar__link:hover,
+.navbar__link:focus-visible{
+  color:var(--color-primary);
+}
 
 
 /*==============================
 Hero Section
 =================================*/
 
-.hero {
-  background-color: var(--secondaryColor);
-  padding-top: 2rem;
-}
-
-.navbar{
-  display:grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.navbar__logoLink {
-  font-size: var(--subTitleFontSize);
-  font-weight: 600;
-  color: var(--secondaryTextColor);
-}
-
-.navbar__logoLink img {
-  width: 3rem;
-}
-
-.navbar__menu {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  justify-content: flex-end;
-  align-items: center;
-  gap: 2rem;
-}
-
-.navbar__link {
-  color: var(--secondaryTextColor);
-  font-weight: bold;
-  transition: all 0.3s linear;
-}
-
-.navbar__link:hover {
-  color: var(--primaryColor);
+.hero{
+  background:var(--color-secondary);
 }
 
 .hero__content {
   text-align: center;
-  margin-top: 10rem;
 }
 
 .hero__title{
-  font-size: var(--titleFontSize);
-  font-weight: 600;
-  color: var(--primaryTextColor);
+  color:var(--color-text-primary);
+  font-size:var(--font-size-2xl);
 }
 
 .hero__description {
-  font-size: var(--primaryFontSize);
-  color: var(--secondaryTextColor);
   margin-top: 2rem;
 }
 
