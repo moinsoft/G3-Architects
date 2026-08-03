@@ -191,3 +191,39 @@ Hero Section
 .hero__btn{
   margin: 3rem 0;
 }
+
+/*==============================
+About Section
+=================================*/
+
+.about__team{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  align-items: center;
+  gap:3rem;
+}
+
+.about__gallery{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:1rem;
+}
+
+.about__title{
+  color:var(--color-text-primary);
+  font-size:var(--font-size-xl);
+  margin-bottom:1rem;
+}
+
+.about__title--thin{
+  font-weight:var(--font-weight-regular);
+  color:var(--color-text-secondary);
+}
+
+.orange-plag{
+  color:var(--color-primary);
+}
+
+.btn__about{
+  margin-top:2rem;
+}
