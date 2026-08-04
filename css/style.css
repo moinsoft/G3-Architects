@@ -332,3 +332,38 @@ Facts Section
   border-radius:var(--radius-md);
   border: 1px solid var(--color-primary);
 }
+
+/*==============================
+Sponsors Section
+=================================*/
+
+.sponsors__area{
+  text-align:center;
+}
+
+.sponsors__title{
+  color:var(--color-text-primary);
+  font-size:var(--font-size-xl);
+}
+
+.sponsors__description{
+  margin:2rem 0;
+}
+
+.sponsors__logo{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:2rem;
+  align-items:center;
+  justify-items:center;
+}
+
+.sponsors__logo-single{
+  width:10.625rem;
+  height:3.125rem;
+}
+
+.sponsors__logo-single img{
+  width:100%;
+  height:100%;
+}
