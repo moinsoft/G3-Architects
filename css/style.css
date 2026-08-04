@@ -132,7 +132,7 @@ Header Section
 
 .navbar{
   display:grid;
-  grid-template-columns:1fr auto;
+  grid-template-columns:auto 1fr;
   align-items: center;
 }
 
@@ -154,12 +154,14 @@ Header Section
 
 .navbar__menu{
   display:flex;
+  justify-content: flex-end;
   gap:2rem;
 }
 
 .navbar__link{
   font-weight:var(--font-weight-bold);
   transition:var(--transition-fast);
+  font-size:var(--font-size-lg);
 }
 
 .navbar__link:hover,
