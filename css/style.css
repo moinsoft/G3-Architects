@@ -308,3 +308,27 @@ Feature Section
   transform:translate(-50%,-50%);
   text-align:center;
 }
+
+/*==============================
+Facts Section
+=================================*/
+
+.facts__title{
+  color:var(--color-text-primary);
+  font-size:var(--font-size-xl);
+}
+
+.facts__card{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:2rem;
+  padding: 4rem;
+}
+
+.facts__card-single{
+  text-align:center;
+  padding: 1.5rem;
+  box-shadow:var(--box-Shadow);
+  border-radius:var(--radius-md);
+  border: 1px solid var(--color-primary);
+}
