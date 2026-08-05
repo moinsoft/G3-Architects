@@ -1,0 +1,206 @@
+/*====================================
+Tablet (≤992px)
+=====================================*/
+
+@media screen and (max-width: 992px) {
+
+  .pt-100{
+    padding-top:5rem;
+  }
+
+  .pb-100{
+    padding-bottom:5rem;
+  }
+
+  /* Header */
+
+  .navbar{
+    grid-template-columns:1fr;
+    justify-items:center;
+    gap:1rem;
+  }
+
+  .navbar__menu{
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:1.5rem;
+  }
+
+
+  /* Hero */
+
+  .hero__title{
+    font-size:3rem;
+  }
+
+
+  /* About */
+
+  .about__area{
+    grid-template-columns:1fr;
+    padding:0;
+  }
+  .about__img img{
+    width:100%;
+  }
+
+  .about__content{
+    text-align:center;
+  }
+
+
+  /* Feature */
+
+  .feature__area{
+    grid-template-columns:1fr;
+    justify-items:center;
+    gap:3rem;
+  }
+
+  .feature__experience{
+    left:50%;
+  }
+
+
+  /* Facts */
+
+  .facts__card{
+    grid-template-columns:repeat(2,1fr);
+    padding:3rem 0;
+  }
+
+
+  /* Sponsors */
+
+  .sponsors__logo-single{
+    width:100%;
+    height:100%;
+  }
+
+}
+
+
+
+
+/*====================================
+Mobile (≤576px)
+=====================================*/
+
+@media screen and (max-width:576px){
+
+  .pt-100{
+    padding-top:3.75rem;
+  }
+
+  .pb-100{
+    padding-bottom:3.75rem;
+  }
+
+  .pt-50{
+    padding-top:2.5rem;
+  }
+
+  .pb-50{
+    padding-bottom:2.5rem;
+  }
+
+
+  /* Header */
+
+  .header{
+    padding:1rem 0;
+  }
+
+  .navbar__logo{
+    flex-direction:column;
+  }
+
+  .navbar__logo-text{
+    font-size:2rem;
+  }
+
+  .navbar__menu{
+    flex-direction:column;
+    gap:1rem;
+  }
+
+  .navbar__link{
+    font-size:1rem;
+  }
+
+
+  /* Hero */
+
+  .hero__title{
+    font-size:2.5rem;
+    line-height:1.2;
+  }
+
+  .hero__description{
+    margin-top:1.5rem;
+  }
+
+  .hero__btn{
+    margin:2rem 0;
+  }
+
+
+  /* About */
+
+  .about__gallery{
+    grid-template-columns:1fr;
+  }
+
+  .about__title{
+    font-size:2rem;
+  }
+
+
+  /* Feature */
+
+  .feature__title{
+    font-size:1.5rem;
+    padding-left:1rem;
+  }
+
+  .feature__experience{
+    font-size:var(--font-size-base);
+    padding: 1rem;
+  }
+
+
+  /* Facts */
+
+  .facts__title{
+    font-size:2rem;
+  }
+
+  .facts__card{
+    grid-template-columns:1fr;
+    gap:1.5rem;
+  }
+
+
+  /* Sponsors */
+
+  .sponsors__title{
+    font-size:2rem;
+  }
+
+  .sponsors__logo{
+    grid-template-columns:1fr;
+    gap:2rem;
+  }
+
+  .sponsors__logo-single{
+    width:9rem;
+  }
+
+
+  /* Footer */
+
+  .footer__description{
+    font-size:1rem;
+  }
+
+}
