@@ -2,68 +2,60 @@
 
 A responsive architecture landing page built from a Figma design using HTML5 and CSS3 while following the BEM methodology and modern frontend development best practices.
 
-## 🔗 Links
+## Links
 
 **🌐 Live Demo:** [View Live Demo](https://moinsoft.github.io/G3-Architects/)  
 **📦 Repository:** [GitHub Repository](https://github.com/moinsoft/G3-Architects)
 
-## 📌 Project Overview
+## Project Overview
 
 G3 Architects is a responsive single-page landing page developed by converting a Figma design into a functional website.
 
 The primary goal of this project is to practice semantic HTML, modern CSS, responsive web design, Git/GitHub workflow, and the BEM naming methodology while maintaining a clean, scalable, and organized project structure.
 
-## 🛠️ Built With
-
-* HTML5
-* CSS3
-* Flexbox
-* CSS Grid
-* BEM Methodology
-* Responsive Web Design
-
-## 🔧 Tools
-
-* Git
-* GitHub
-* GitHub Pages
-* Visual Studio Code
-
-## ✨ Current Features
-
-* Responsive Header
-* Hero Section
-* Semantic HTML Structure
-* BEM-based CSS Class Naming
-* Organized Project Structure
-
-> 🚧 This project is currently under development. More sections and features will be added gradually.
-
-## 📂 Project Structure
+## Project Structure
 
 ```text
 G3-Architects/
 │
-├── index.html
-├── README.md
-├── .gitignore
+├── assets/
+│   ├── banner/
+│   ├── icons/
+│   ├── logo/
+│   ├── sponsors/
+│   └── team/
 │
 ├── css/
-│   └── style.css
+│   ├── style.css
+│   └── responsive.css
 │
-└── assets/
-    ├── banner/
-    ├── icons/
-    ├── logo/
-    ├── sponsors/
-    └── team/
+├── index.html
+├── README.md
+└── .gitignore
 ```
 
-## 📸 Screenshot
+## What I Practiced
 
-Coming soon.
+- Semantic HTML5
+- CSS Architecture
+- Responsive Web Design
+- CSS Grid & Flexbox
+- BEM Methodology
 
-## ⚙️ Installation
+## Development Workflow
+
+This project was developed using a professional GitHub workflow:
+
+- GitHub Projects
+- Issues
+- Labels
+- Feature Branches
+- Conventional Commits
+- Pull Requests
+- Code Review
+- Merge Strategy
+
+## Installation
 
 Clone the repository:
 
@@ -73,7 +65,7 @@ git clone https://github.com/moinsoft/G3-Architects.git
 
 Navigate to the project folder and open `index.html` in your browser.
 
-## 👨‍💻 Author
+## Author
 
 **Mohammad Moin Uddin**
 
